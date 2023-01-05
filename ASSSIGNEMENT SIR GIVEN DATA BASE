@@ -1,0 +1,22 @@
+select first_name,last_name,job_id,salary from [tbl_emp_data] where first_name like 'P%'
+ select top 1(salary) from [tbl_emp_data]  order by salary desc
+ SELECT MAX(salary) FROM [tbl_emp_data] WHERE SALARY < (SELECT MAX(salary) FROM [tbl_emp_data])
+select salary from [tbl_emp_data] order by salary desc offset 1 row FETCH NEXT 2 ROWS ONLY
+ select salary as salary, manager_id from [tbl_emp_data] where manager_id is NOt Null order by salary desc
+ SELECT sup.employee_id, COUNT (sub.employee_id) AS number_of_employees FROM [dbo].[tbl_emp_data] sub JOIN [dbo].[tbl_emp_data]sup ONsub.manager_id = sup.employee_id GROUP BY sup.employee_id, sup.first_name, sup.last_name;
+no solve
+ Select COUNT(hire_date) from tbl_employee
+ select salary from[dbo].[tbl_emp_data]  range order by salary desc
+not selve
+select first_name from [tbl_emp_data] where first_name like '%an%'
+not solve
+not solve
+ SELECT employee_id, first_name,last_name FROM [tbl_emp_data] WHERE salary >( SELECT AVG(salary) FROM    SELECT employee_id, first_name,last_name FROM [tbl_emp_data]WHERE salary >( SELECT AVG(salary) FROM [tbl_emp_data] )
+ select min(salary) from tbl_employe inner join tbl_department on tbl_employe.employee_id=tbl_department.department_id
+rest are in proerss 
+
+
+
+
+
+
